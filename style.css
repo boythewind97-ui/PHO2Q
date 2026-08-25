@@ -45,3 +45,22 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
 .lb-next { right: 20px; }
 .lb-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; transition: 0.2s; }
 .lb-close:hover { color: var(--gold); }
+/* HIỂN THỊ FULL ẢNH GỐC CÁC MÓN ĂN (KHÔNG BỊ CẮT XÉN) */
+.menu-card .card-image {
+  height: auto !important; 
+  aspect-ratio: 4/3; /* Giữ cho các khung ảnh đều nhau */
+}
+
+.menu-card .card-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; /* Ép hiển thị toàn bộ chi tiết ảnh gốc */
+  background-color: #f4edd9; /* Màu nền lót đề phòng ảnh có tỷ lệ khác nhau */
+}
+
+/* Tinh chỉnh riêng cho màn hình điện thoại (khi xếp 2 cột) */
+@media (max-width: 520px) {
+  .menu-card .card-image {
+    aspect-ratio: 1/1; /* Đổi thành khung vuông để ảnh hiển thị to và rõ hơn trên điện thoại */
+  }
+}
