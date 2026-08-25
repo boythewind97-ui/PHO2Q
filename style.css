@@ -52,18 +52,34 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
 .lb-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; transition: 0.2s; }
 .lb-close:hover { color: var(--gold); }
 
-/* KHẮC PHỤC HIỂN THỊ ẢNH MÓN ĂN & GALLERY */
+/* KHẮC PHỤC HIỂN THỊ ẢNH MÓN ĂN ĐỀU TĂM TẮP (KHÔNG BỊ LỒI LÕM) */
+.menu-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important; /* Giúp các thẻ món ăn luôn cao bằng nhau */
+}
 .menu-card .card-image {
-  height: auto !important; 
-  aspect-ratio: auto !important; /* Gỡ bỏ ép tỷ lệ khung để nhường chỗ cho ảnh gốc */
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 4/3 !important; /* Ép TẤT CẢ khung ảnh về chung chuẩn tỷ lệ 4:3 */
   background: transparent;
+  overflow: hidden; /* Giấu đi các phần ảnh bị tràn */
 }
 .menu-card .card-image img {
   width: 100% !important;
-  height: auto !important; /* Chiều cao tự động co giãn theo tỷ lệ thực của ảnh */
-  object-fit: contain !important; /* Đảm bảo hiển thị full 100% ảnh, không bị crop */
+  height: 100% !important;
+  object-fit: cover !important; /* Phóng ảnh lấp đầy khung, lưới sẽ đều tăm tắp */
   display: block;
 }
+.card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important; 
+}
+.card-body .price {
+  margin-top: auto !important; /* Tự động đẩy giá tiền xuống sát đáy để thẳng hàng 100% */
+}
+
 .gallery-item img,
 .story-image img {
   width: 100% !important;
@@ -75,7 +91,7 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
 
 @media (max-width: 520px) {
   .menu-card .card-image {
-    aspect-ratio: auto !important; /* Gỡ bỏ khung vuông 1/1 trên điện thoại để ảnh hiện full */
+    aspect-ratio: 1/1 !important; /* Trên điện thoại ép thành khung vuông cho to rõ */
   }
   .category-nav {
     display: grid !important;
