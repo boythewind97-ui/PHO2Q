@@ -110,7 +110,8 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
   .hero-bottom {
     position: relative !important;
     background: var(--green) !important; 
-    padding: 30px 20px 40px !important;
+    /* Thu nhỏ padding để khung xanh ép sát lại, gọn gàng hơn */
+    padding: 15px 15px 20px !important; 
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -118,12 +119,14 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
   }
   .hero-actions {
     justify-content: center !important;
-    margin-top: 20px !important;
+    /* Kéo 2 nút lên gần chữ hơn */
+    margin-top: 10px !important; 
     width: 100%;
   }
   .hero-bottom h1 {
-    font-size: 26px !important; 
-    margin: 8px 0 !important;
+    /* Chỉnh chữ nhỏ lại một chút để tỷ lệ đẹp hơn khi khung đã bị thu nhỏ */
+    font-size: 22px !important; 
+    margin: 5px 0 !important;
   }
   .hero-bottom p {
     font-size: 14px !important;
