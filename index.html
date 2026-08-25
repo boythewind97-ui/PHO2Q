@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="2Q-PHỞ｜静岡県沼津市の本格ベトナム料理店。フォー、ブンボーフエ、バインミー、セットメニューなど。">
 <title>2Q-PHỞ｜Vietnamese Restaurant in Numazu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <body>
 
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="2Q-PHỞ ホーム">
+  <a class="brand" href="#home" aria-label="2Q PHỞ ホーム">
     <img src="logo.png" alt="2Q PHỞ ロゴ" class="brand-logo">
     <span class="brand-copy"><strong>2Q-PHỞ</strong><small>VIETNAMESE CUISINE</small></span>
   </a>
@@ -33,119 +33,163 @@
 </header>
 
 <main>
-<section id="home" class="hero">
-  <div class="hero-banner"></div>
-  <div class="hero-bottom">
-    <div>
-      <span class="eyebrow">AUTHENTIC VIETNAMESE CUISINE</span>
-      <h1>本場の味を、沼津で。</h1>
-      <p>Hương vị Việt Nam, ngay tại Numazu.</p>
-    </div>
-    <div class="hero-actions">
-      <a class="btn btn-red" href="#menu">メニューを見る</a>
-      <a class="btn btn-light" href="https://maps.app.goo.gl/ytKHFfYiuFk86i297" target="_blank" rel="noopener">Google Maps</a>
-    </div>
-  </div>
-</section>
-
-<section class="intro-strip">
-  <div><span>🍜</span><strong>AUTHENTIC</strong><small>本格ベトナム料理</small></div>
-  <div><span>🌿</span><strong>FRESH</strong><small>新鮮なハーブと食材</small></div>
-  <div><span>♥</span><strong>WARM</strong><small>あたたかいおもてなし</small></div>
-  <div><span>📍</span><strong>NUMAZU</strong><small>沼津駅北口 徒歩2分</small></div>
-</section>
-
-<section id="menu" class="section menu-section">
-  <div class="section-heading">
-    <div><span class="eyebrow dark">OUR MENU</span><h2>メニュー <small>Thực đơn</small></h2></div>
-    <p>ベトナムの味を、もっと身近に。<br><b>表示価格はすべて税込です。</b></p>
-  </div>
-
-  <!-- BỘ LỌC DANH MỤC -->
-  <div class="category-nav">
-    <button class="active" data-filter="all">すべて / Tất cả</button>
-    <button data-filter="food">🍜 お料理 / Đồ ăn</button>
-    <button data-filter="set">🥢 セット / Set</button>
-    <button data-filter="drink">🥤 お飲み物 / Đồ uống</button>
-  </div>
-
-  <!-- BANNER KHUYẾN MÃI SET MENU -->
-  <div class="menu-feature" id="setMenuFeature"> 
-    <div class="feature-poster">
-      <div class="poster-gallery">
-        <img src="set-menu-poster.jpg" class="zoom-img" alt="Menu 1">
-        <img src="anh-2.jpg" class="zoom-img" alt="Menu 2">
-        <img src="anh-3.jpg" class="zoom-img" alt="Menu 3">
-        <img src="anh-4.jpg" class="zoom-img" alt="Menu 4">
-        <img src="anh-5.jpg" class="zoom-img" alt="Menu 5">
+  <!-- HERO SECTION FULL-BLEED -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow gold">AUTHENTIC VIETNAMESE CUISINE</span>
+      <h1>本場の味を、<br class="mobile-break">沼津で。</h1>
+      <p class="sub-quote">Hương vị phở truyền thống — Đậm đà bản sắc Việt tại Numazu.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#menu">Thực đơn / メニュー</a>
+        <a class="btn btn-glass" href="https://maps.app.goo.gl/ytKHFfYiuFk86i297" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Google Maps
+        </a>
       </div>
-      <span>※ メニュー写真はイメージです。</span>
     </div>
-    <div class="feature-copy">
-      <span class="eyebrow dark">SET MENU</span>
-      <h3>お得なセットメニュー</h3>
-      <p>フォー・ブンボーフエ・バインミーを組み合わせた人気のセットです。</p>
-      <p class="vn-line">Combo Việt Nam — ngon, tiện và đầy đặn.</p>
+  </section>
+
+  <!-- INTRO ICONS STRIP -->
+  <section class="intro-strip">
+    <div class="strip-item">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+      </div>
+      <strong>AUTHENTIC</strong>
+      <small>本格ベトナム料理</small>
     </div>
-  </div>
+    <div class="strip-item">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"></path><path d="M12 6v6l4 2"></path></svg>
+      </div>
+      <strong>FRESH</strong>
+      <small>新鮮なハーブと食材</small>
+    </div>
+    <div class="strip-item">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      </div>
+      <strong>WARM</strong>
+      <small>あたたかいおもてなし</small>
+    </div>
+    <div class="strip-item">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      </div>
+      <strong>NUMAZU</strong>
+      <small>沼津駅北口 徒歩2分</small>
+    </div>
+  </section>
 
-  <!-- KHU VỰC HIỂN THỊ MÓN ĂN THEO BỘ LỌC -->
-  <div id="menu-grid" class="menu-grid"></div>
-</section>
+  <!-- MENU SECTION -->
+  <section id="menu" class="section menu-section">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow green">OUR MENU</span>
+        <h2>メニュー <small>Thực đơn</small></h2>
+      </div>
+      <p class="tax-note">ベトナムの味を、もっと身近に。<br><b>表示価格はすべて税込です。</b></p>
+    </div>
 
-<section id="about" class="story-section">
-  <div class="story-image">
-   <img src="interior.jpg" alt="Không gian quán">
-  </div>
-  <div class="story-content">
-    <span class="eyebrow dark">ABOUT 2Q PHỞ</span>
-    <h2>2Q PHỞ<br><em>ベトナムを、沼津で。</em></h2>
-    <p>2Q PHỞは、ベトナムで親しまれている料理を、沼津で気軽に楽しんでいただけるベトナム料理店です。</p>
-    <p>フォー、ブンボーフエ、バインミーなど、本場の味を心を込めてご提供します。</p>
-    <div class="viet-quote">“Ăn phở, nhớ quê hương.”<small>フォーを食べて、故郷を思い出す。</small></div>
-  </div>
-</section>
+    <!-- MODERN HORIZONTAL SCROLL TABS -->
+    <div class="category-nav-wrapper">
+      <div class="category-nav">
+        <button class="active" data-filter="all">Tất cả / 全て</button>
+        <button data-filter="set">🥢 Combo / セット</button>
+        <button data-filter="food">🍜 Đồ ăn / お料理</button>
+        <button data-filter="drink">🥤 Đồ uống / お飲み物</button>
+      </div>
+    </div>
 
-<section id="gallery" class="section gallery-section">
-  <div class="section-heading centered">
-    <span class="eyebrow dark">GALLERY</span>
-    <h2>お店・料理の雰囲気 <small>Không gian</small></h2>
-    <p>写真ファイルを同じフォルダに入れるだけで表示できます。</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item large"><img src="gallery-01.jpg" class="zoom-img" alt="Ảnh 1"></div>
-    <div class="gallery-item"><img src="gallery-02.jpg" class="zoom-img" alt="Ảnh 2"></div>
-    <div class="gallery-item"><img src="gallery-03.jpg" class="zoom-img" alt="Ảnh 3"></div>
-    <div class="gallery-item"><img src="gallery-04.jpg" class="zoom-img" alt="Ảnh 4"></div>
-    <div class="gallery-item"><img src="gallery-05.jpg" class="zoom-img" alt="Ảnh 5"></div>
-  </div>
-</section>
+    <!-- MENU GRID -->
+    <div id="menu-grid" class="menu-grid"></div>
+  </section>
 
-<section id="access" class="access-section">
-  <div class="access-info">
-    <span class="eyebrow dark">ACCESS</span>
-    <h2>店舗情報 <small>Thông tin cửa hàng</small></h2>
-    <div class="info-row"><span>📍</span><div><b>住所 / Địa chỉ</b><p>〒410-0056<br>静岡県沼津市高島町17-21 石川ビル2F</p></div></div>
-    <div class="info-row"><span>📞</span><div><b>電話 / Điện thoại</b><p><a href="tel:07090772258">070-9077-2258</a></p></div></div>
-    <div class="info-row"><span>🕐</span><div><b>営業時間 / Giờ mở cửa</b><p>月曜日 11:00–15:00 / 17:00–21:00<br>火曜日 17:00–21:00<br>水曜日 11:00–15:00 / 17:00–21:00<br>木曜日 11:00–15:00 / 17:00–21:00<br>金曜日 11:00–15:00 / 17:00–21:00<br>土曜日 11:00–15:00 / 17:00–21:00<br>日曜日 11:00–15:00 / 17:00–21:00</p></div></div>
-    <div class="holiday">休業日 / Ngày nghỉ：年末年始 12/30〜1/1</div>
-    <div class="access-buttons"><a class="btn btn-red" href="https://maps.app.goo.gl/ytKHFfYiuFk86i297" target="_blank" rel="noopener">Google Mapsで開く →</a><a class="btn btn-outline" href="tel:07090772258">電話する</a></div>
-  </div>
-  <div class="map-card"><iframe title="2Q PHỞ Google Maps" src="https://www.google.com/maps?q=2Q%20PHO%20%E3%83%BB2Q%20%E3%83%95%E3%82%A9%E3%83%BC%20%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E6%96%99%E7%90%86%E5%B0%82%E9%96%80%E5%BA%97%2C%2017-21%20%E9%AB%98%E5%B3%B6%E7%94%BA%20%E6%B2%BC%E6%B4%A5%E5%B8%82%20%E9%9D%99%E5%B2%A1%E7%9C%8C&output=embed" loading="lazy"></iframe></div>
-</section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="story-section">
+    <div class="story-image">
+      <img src="interior.jpg" alt="Không gian quán 2Q PHỞ" loading="lazy">
+    </div>
+    <div class="story-content">
+      <span class="eyebrow green">ABOUT 2Q PHỞ</span>
+      <h2>2Q PHỞ<br><em>ベトナムを、沼津で。</em></h2>
+      <p>2Q PHỞは、ベトナムで親しまれている料理を、沼津で気軽に楽しんでいただけるベトナム料理店です。</p>
+      <p>フォー、ブンボーフエ、バインミーなど、本場の味を心を込めてご提供します。</p>
+      <div class="viet-quote">
+        “Ăn phở, nhớ quê hương.”
+        <small>フォーを食べて、故郷を思い出す。</small>
+      </div>
+    </div>
+  </section>
 
-<section class="sns-section">
-  <div><span class="eyebrow">FOLLOW 2Q PHỞ</span><h2>お店の最新情報をチェック</h2><p>TikTok・Facebookで新メニューやお店の様子を発信しています。</p></div>
-  <div class="sns-buttons"><a href="https://www.tiktok.com/@2qpho" target="_blank" rel="noopener">♪ TikTok</a><a href="https://www.facebook.com/2qphonumazu" target="_blank" rel="noopener">f Facebook</a><a href="tel:07090772258">☎ 070-9077-2258</a></div>
-</section>
+  <!-- GALLERY -->
+  <section id="gallery" class="section gallery-section">
+    <div class="section-heading centered">
+      <span class="eyebrow green">GALLERY</span>
+      <h2>お店・料理の雰囲気 <small>Không gian quán</small></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item large"><img src="gallery-01.jpg" class="zoom-img" alt="Không gian 1" loading="lazy"></div>
+      <div class="gallery-item"><img src="gallery-02.jpg" class="zoom-img" alt="Không gian 2" loading="lazy"></div>
+      <div class="gallery-item"><img src="gallery-03.jpg" class="zoom-img" alt="Không gian 3" loading="lazy"></div>
+      <div class="gallery-item"><img src="gallery-04.jpg" class="zoom-img" alt="Không gian 4" loading="lazy"></div>
+      <div class="gallery-item"><img src="gallery-05.jpg" class="zoom-img" alt="Không gian 5" loading="lazy"></div>
+    </div>
+  </section>
+
+  <!-- ACCESS -->
+  <section id="access" class="access-section">
+    <div class="access-info">
+      <span class="eyebrow green">ACCESS</span>
+      <h2>店舗情報 <small>Thông tin cửa hàng</small></h2>
+      <div class="info-row">
+        <span>📍</span>
+        <div><b>住所 / Địa chỉ</b><p>〒410-0056<br>静岡県沼津市高島町17-21 石川ビル2F</p></div>
+      </div>
+      <div class="info-row">
+        <span>📞</span>
+        <div><b>電話 / Điện thoại</b><p><a href="tel:07090772258">070-9077-2258</a></p></div>
+      </div>
+      <div class="info-row">
+        <span>🕐</span>
+        <div><b>営業時間 / Giờ mở cửa</b><p>月曜日 11:00–15:00 / 17:00–21:00<br>火曜日 17:00–21:00<br>水曜日 11:00–15:00 / 17:00–21:00<br>木曜日 11:00–15:00 / 17:00–21:00<br>金曜日 11:00–15:00 / 17:00–21:00<br>土曜日 11:00–15:00 / 17:00–21:00<br>日曜日 11:00–15:00 / 17:00–21:00</p></div>
+      </div>
+      <div class="holiday">休業日 / Ngày nghỉ：年末年始 12/30〜1/1</div>
+      <div class="access-buttons">
+        <a class="btn btn-primary" href="https://maps.app.goo.gl/ytKHFfYiuFk86i297" target="_blank" rel="noopener">Google Mapsで開く →</a>
+        <a class="btn btn-outline" href="tel:07090772258">電話する</a>
+      </div>
+    </div>
+    <div class="map-card">
+      <iframe title="2Q PHỞ Google Maps" src="https://www.google.com/maps?q=2Q%20PHO%20%E3%83%BB2Q%20%E3%83%95%E3%82%A9%E3%83%BC%20%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E6%96%99%E7%90%86%E5%B0%82%E9%96%80%E5%BA%97%2C%2017-21%20%E9%AB%98%E5%B3%B6%E7%94%BA%20%E6%B2%BC%E6%B4%A5%E5%B8%82%20%E9%9D%99%E5%B2%A1%E7%9C%8C&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- SNS CALLOUT -->
+  <section class="sns-section">
+    <div>
+      <span class="eyebrow gold">FOLLOW 2Q PHỞ</span>
+      <h2>お店の最新情報をチェック</h2>
+      <p>TikTok・Facebookで新メニューやお店の様子を発信しています。</p>
+    </div>
+    <div class="sns-buttons">
+      <a href="https://www.tiktok.com/@2qpho" target="_blank" rel="noopener">♪ TikTok</a>
+      <a href="https://www.facebook.com/2qphonumazu" target="_blank" rel="noopener">f Facebook</a>
+      <a href="tel:07090772258">☎ 070-9077-2258</a>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="footer-main"><img src="logo.png" alt="2Q PHỞ" class="footer-logo-img"><p>本場ベトナムの味を、沼津で。<br>Hương vị Việt Nam, ngay tại Numazu.</p></div>
+  <div class="footer-main">
+    <img src="logo.png" alt="2Q PHỞ" class="footer-logo-img">
+    <p>本場ベトナムの味を、沼津で。<br>Hương vị Việt Nam, ngay tại Numazu.</p>
+  </div>
   <div><b>MENU</b><a href="#menu">お料理</a><a href="#menu">セット</a><a href="#menu">お飲み物</a></div>
   <div><b>SHOP</b><a href="#about">お店について</a><a href="#gallery">ギャラリー</a><a href="#access">アクセス</a></div>
   <div><b>SNS / CONTACT</b><a href="https://www.tiktok.com/@2qpho">TikTok</a><a href="https://www.facebook.com/2qphonumazu">Facebook</a><a href="tel:07090772258">070-9077-2258</a></div>
-  <div class="copyright">© 2026 2Q PHỞ Phan Trọng Đại. All Rights Reserved.</div>
+  <div class="copyright">© 2026 2Q PHỞ Phan Trọng Đại . All Rights Reserved.</div>
 </footer>
 
 <script src="script.js"></script>
