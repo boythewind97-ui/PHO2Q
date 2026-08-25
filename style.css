@@ -52,7 +52,7 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
 .lb-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; transition: 0.2s; }
 .lb-close:hover { color: var(--gold); }
 
-/* KHẮC PHỤC HIỂN THỊ ẢNH MÓN ĂN & GALLERY (KHÔNG BỊ MÀNG MỜ / LỆCH KHUNG) */
+/* KHẮC PHỤC HIỂN THỊ ẢNH MÓN ĂN & GALLERY */
 .menu-card .card-image {
   height: auto !important; 
   aspect-ratio: 4/3; 
@@ -88,5 +88,44 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     width: 100% !important;
     white-space: normal !important; 
     line-height: 1.3 !important;
+  }
+}
+
+/* SẮP XẾP LẠI PHẦN BANNER VÀ CHỮ TRÊN ĐIỆN THOẠI (SMART LAYOUT) */
+@media (max-width: 800px) {
+  .hero {
+    min-height: auto !important; 
+    display: flex !important;
+    flex-direction: column !important; 
+  }
+  .hero-banner {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 3.2 / 1; 
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .hero-bottom {
+    position: relative !important;
+    background: var(--green) !important; 
+    padding: 30px 20px 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .hero-actions {
+    justify-content: center !important;
+    margin-top: 20px !important;
+    width: 100%;
+  }
+  .hero-bottom h1 {
+    font-size: 26px !important; 
+    margin: 8px 0 !important;
+  }
+  .hero-bottom p {
+    font-size: 14px !important;
   }
 }
