@@ -98,3 +98,7 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     line-height: 1.3 !important;
   }
 }
+/* ÉP ẢNH SỐ 5 TRẢI DÀI FULL BỀ NGANG */
+.feature-poster .poster-gallery img:nth-child(5) {
+  grid-column: span 2 !important; /* Lệnh này bắt ảnh số 5 chiếm trọn 2 cột */
+}
