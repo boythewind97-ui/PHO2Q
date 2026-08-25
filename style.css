@@ -157,3 +157,32 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     font-size: 13px !important;
   }
 }
+/* ========================================================
+   CHỈNH SỬA LẠI BỐ CỤC BANNER SET MENU TRÊN MÁY TÍNH
+   (Khắc phục lỗi ảnh bị bóp nhỏ, dư khoảng trắng)
+   ======================================================== */
+@media (min-width: 801px) { /* Lệnh này đảm bảo CHỈ áp dụng trên màn hình lớn (Máy tính/iPad ngang) */
+  .menu-feature {
+    grid-template-columns: 1.6fr 1fr !important; /* Chia lại tỷ lệ: Khu ảnh lớn hơn (60%), khu chữ (40%) */
+    gap: 50px !important;
+    padding: 40px !important; /* Tăng khoảng cách lề cho sang trọng */
+  }
+  
+  .poster-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* Xếp 5 tờ menu thành 3 cột cho thoáng */
+    gap: 15px !important;
+    align-items: center;
+  }
+  
+  .feature-poster .poster-gallery img {
+    aspect-ratio: auto !important;
+    object-fit: contain !important; /* Đảm bảo hiển thị nguyên vẹn tờ menu */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15) !important; /* Thêm chút bóng đổ cho tờ menu nổi bật lên */
+  }
+  
+  /* Bỏ lệnh ép ảnh số 5 dài ra trên máy tính (chỉ giữ trên điện thoại) */
+  .feature-poster .poster-gallery img:nth-child(5) {
+    grid-column: auto !important; 
+  }
+}
