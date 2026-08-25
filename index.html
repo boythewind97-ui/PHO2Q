@@ -13,9 +13,9 @@
 <body>
 
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="2Q PHỞ ホーム">
+  <a class="brand" href="#home" aria-label="2Q-PHỞ ホーム">
     <img src="logo.png" alt="2Q PHỞ ロゴ" class="brand-logo">
-    <span class="brand-copy"><strong>2Q PHỞ</strong><small>VIETNAMESE CUISINE</small></span>
+    <span class="brand-copy"><strong>2Q-PHỞ</strong><small>VIETNAMESE CUISINE</small></span>
   </a>
   <nav class="main-nav" id="mainNav">
     <a href="#home">ホーム</a>
@@ -61,14 +61,16 @@
     <p>ベトナムの味を、もっと身近に。<br><b>表示価格はすべて税込です。</b></p>
   </div>
 
+  <!-- BỘ LỌC DANH MỤC -->
   <div class="category-nav">
-    <button class="active" data-filter="all">すべて</button>
+    <button class="active" data-filter="all">すべて / Tất cả</button>
     <button data-filter="food">🍜 お料理 / Đồ ăn</button>
     <button data-filter="set">🥢 セット / Set</button>
     <button data-filter="drink">🥤 お飲み物 / Đồ uống</button>
   </div>
 
-  <div class="menu-feature"> 
+  <!-- BANNER KHUYẾN MÃI SET MENU -->
+  <div class="menu-feature" id="setMenuFeature"> 
     <div class="feature-poster">
       <div class="poster-gallery">
         <img src="set-menu-poster.jpg" class="zoom-img" alt="Menu 1">
@@ -87,6 +89,7 @@
     </div>
   </div>
 
+  <!-- KHU VỰC HIỂN THỊ MÓN ĂN THEO BỘ LỌC -->
   <div id="menu-grid" class="menu-grid"></div>
 </section>
 
