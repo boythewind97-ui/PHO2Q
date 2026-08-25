@@ -4,7 +4,7 @@ html{scroll-behavior:smooth}
 body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--cream);line-height:1.75}
 a{text-decoration:none;color:inherit}
 .site-header{height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);display:flex;align-items:center;padding:0 4%;gap:28px;position:sticky;top:0;z-index:100;box-shadow:0 3px 25px #00000012}
-.brand{display:flex;align-items:center;gap:10px;min-width:220px}.brand-logo{width:55px;height:55px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}.brand-copy strong{display:block;font-family:"Playfair Display",serif;font-size:24px;line-height:1;color:var(--green)}.brand-copy small{font-size:8px;letter-spacing:2px;color:#777}
+.brand{display:flex;align-items:center;gap:10px;min-width:220px}.brand-logo{width:55px;height:55px;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}.brand-copy strong{display:block;font-family:"Noto Sans JP",sans-serif;font-weight:900;font-size:24px;line-height:1;color:var(--green);letter-spacing:1px}.brand-copy small{font-size:8px;letter-spacing:2px;color:#777}
 .main-nav{display:flex;gap:30px;justify-content:center;flex:1;font-size:14px;font-weight:800}.main-nav a{position:relative;padding:8px 0}.main-nav a:after{content:"";position:absolute;left:0;bottom:2px;width:0;height:2px;background:var(--gold);transition:.25s}.main-nav a:hover:after{width:100%}
 .header-socials{display:flex;gap:8px}.social{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;font-size:19px;transition:.25s}.social:hover{transform:translateY(-3px)}.tiktok{background:#111}.facebook{background:#1877f2}.phone{background:var(--red)}
 .menu-toggle{display:none;border:0;background:none;font-size:27px}
