@@ -19,7 +19,7 @@ const menuItems = [
 {id:"F11",cat:"food",jp:"焼きバインダー",vn:"BÁNH ĐA NƯỚNG",desc:"香ばしく焼き上げたベトナムのおつまみ",price:380,image:"banh-da-nuong.jpg"},
 {id:"F12",cat:"food",jp:"ベトナムハム",vn:"GIÒ LỤA",desc:"ベトナムの定番ハム",price:550,image:"gio-lua.jpg"},
 {id:"F13",cat:"food",jp:"揚げベトナムソーセージ",vn:"NEM CHUA RÁN",desc:"香ばしいベトナム風揚げソーセージ",price:650,image:"nem-chua-ran.jpg"},
-{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHÈ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
+{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHẺ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
 {id:"F15",cat:"food",jp:"茹で豆",vn:"ĐẬU LUỘC",desc:"シンプルなベトナムのおつまみ",price:500,image:"dau-luoc.jpg"},
 {id:"F16",cat:"food",jp:"海老と豚肉の生春巻き（3本）",vn:"GỎI CUỐN TÔM THỊT 3 CÁI",desc:"海老・豚肉・野菜の生春巻き",price:750,image:"goi-cuon.jpg"},
 {id:"F17",cat:"food",jp:"フォー・ブン用 麺追加",vn:"THÊM BÚN / PHỞ",desc:"フォー・ブンの麺を追加",price:110,image:"them-bun-pho.jpg"},
