@@ -19,7 +19,7 @@ const menuItems = [
 {id:"F11",cat:"food",jp:"焼きバインダー",vn:"BÁNH ĐA NƯỚNG",desc:"香ばしく焼き上げたベトナムのおつまみ",price:380,image:"banh-da-nuong.jpg"},
 {id:"F12",cat:"food",jp:"ベトナムハム",vn:"GIÒ LỤA",desc:"ベトナムの定番ハム",price:550,image:"gio-lua.jpg"},
 {id:"F13",cat:"food",jp:"揚げベトナムソーセージ",vn:"NEM CHUA RÁN",desc:"香ばしいベトナム風揚げソーセージ",price:650,image:"nem-chua-ran.jpg"},
-{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHẺ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
+{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHÈ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
 {id:"F15",cat:"food",jp:"茹で豆",vn:"ĐẬU LUỘC",desc:"シンプルなベトナムのおつまみ",price:500,image:"dau-luoc.jpg"},
 {id:"F16",cat:"food",jp:"海老と豚肉の生春巻き（3本）",vn:"GỎI CUỐN TÔM THỊT 3 CÁI",desc:"海老・豚肉・野菜の生春巻き",price:750,image:"goi-cuon.jpg"},
 {id:"F17",cat:"food",jp:"フォー・ブン用 麺追加",vn:"THÊM BÚN / PHỞ",desc:"フォー・ブンの麺を追加",price:110,image:"them-bun-pho.jpg"},
@@ -46,20 +46,19 @@ const menuItems = [
 {id:"D16",cat:"drink",jp:"Dr Thanh",vn:"Trà Dr Thanh",desc:"",price:380,image:"tra-dr-thanh.jpg"}
 ];
 
-const grid=document.getElementById("menu-grid");
-const buttons=document.querySelectorAll(".category-nav button");
+const grid = document.getElementById("menu-grid");
+const buttons = document.querySelectorAll(".category-nav button");
 
 function formatPrice(n){ return Number(n).toLocaleString("ja-JP") + "円"; }
 
-// BỘ MÃ HIỂN THỊ MENU VÀ ẢNH MÓN ĂN
 function renderMenu(filter="all"){
-  const list=filter==="all" ? menuItems : menuItems.filter(x=>x.cat===filter);
+  const list = filter === "all" ? menuItems : menuItems.filter(x => x.cat === filter);
 
-  grid.innerHTML=list.map(x=>`
+  grid.innerHTML = list.map(x => `
     <article class="menu-card ${x.cat}">
       <div class="card-image">
         <img src="${x.image}" alt="${x.jp}" style="width: 100%; height: 100%; object-fit: cover;">
-        <span class="cat-pill">${x.cat==="set"?"SET":x.cat==="drink"?"DRINK":"FOOD"}</span>
+        <span class="cat-pill">${x.cat === "set" ? "SET" : x.cat === "drink" ? "DRINK" : "FOOD"}</span>
       </div>
       <div class="card-body">
         <span class="code">${x.id}</span>
@@ -72,38 +71,34 @@ function renderMenu(filter="all"){
   `).join("");
 }
 
-// BỘ MÃ XỬ LÝ NÚT BẤM LỌC DANH MỤC VÀ CUỘN TRANG
+// Hàm lắng nghe nút bấm lọc Menu
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
-    // 1. Đổi màu nút đang được chọn
     buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
-    
-    // 2. Lọc và hiển thị đúng các món thuộc danh mục đó
     renderMenu(btn.dataset.filter);
     
-    // 3. Tự động cuộn trang xuống khu vực menu một cách mượt mà
+    // Tự động cuộn trang xuống menu
     const menuSection = document.getElementById("menu");
     if (menuSection) {
-      // Tính toán vị trí cuộn và trừ đi 80px để không bị thanh tiêu đề che khuất
       const y = menuSection.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({top: y, behavior: 'smooth'});
     }
   });
 });
 
-renderMenu(); // Khởi tạo menu khi mới vào web
+renderMenu();
 
-// BỘ MÃ MỞ MENU BÊN GÓC TRÊN ĐIỆN THOẠI
-const toggle=document.querySelector(".menu-toggle");
-const nav=document.getElementById("mainNav");
-toggle?.addEventListener("click",()=>{
-  const open=nav.classList.toggle("open");
-  toggle.setAttribute("aria-expanded",open);
+// Mở menu trên giao diện mobile
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.getElementById("mainNav");
+toggle?.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  toggle.setAttribute("aria-expanded", open);
 });
-nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
-// --- BỘ MÃ CHO HIỆU ỨNG PHÓNG TO VÀ LƯỚT ẢNH (LIGHTBOX) ---
+// Khung lướt ảnh (Lightbox)
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.innerHTML = `
