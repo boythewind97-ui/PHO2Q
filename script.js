@@ -51,6 +51,7 @@ const buttons=document.querySelectorAll(".category-nav button");
 
 function formatPrice(n){ return Number(n).toLocaleString("ja-JP") + "円"; }
 
+// BỘ MÃ HIỂN THỊ MENU VÀ ẢNH MÓN ĂN
 function renderMenu(filter="all"){
   const list=filter==="all" ? menuItems : menuItems.filter(x=>x.cat===filter);
 
@@ -71,6 +72,7 @@ function renderMenu(filter="all"){
   `).join("");
 }
 
+// BỘ MÃ XỬ LÝ NÚT BẤM LỌC DANH MỤC (Tất cả, Đồ ăn, Đồ uống, Set)
 buttons.forEach(btn=>{
   btn.addEventListener("click",()=>{
     buttons.forEach(b=>b.classList.remove("active"));
@@ -80,8 +82,9 @@ buttons.forEach(btn=>{
   });
 });
 
-renderMenu();
+renderMenu(); // Khởi tạo menu khi mới vào web
 
+// BỘ MÃ MỞ MENU BÊN GÓC TRÊN ĐIỆN THOẠI
 const toggle=document.querySelector(".menu-toggle");
 const nav=document.getElementById("mainNav");
 toggle?.addEventListener("click",()=>{
@@ -89,7 +92,8 @@ toggle?.addEventListener("click",()=>{
   toggle.setAttribute("aria-expanded",open);
 });
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
-// --- MÃ CHO HIỆU ỨNG PHÓNG TO VÀ LƯỚT ẢNH ---
+
+// --- BỘ MÃ CHO HIỆU ỨNG PHÓNG TO VÀ LƯỚT ẢNH (LIGHTBOX) ---
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.innerHTML = `
@@ -108,7 +112,6 @@ const btnClose = lightbox.querySelector('.lb-close');
 let currentIndex = 0;
 let imagesArray = [];
 
-// Khi click vào bất kỳ ảnh nào
 document.querySelectorAll('.zoom-img').forEach((img, index) => {
   img.addEventListener('click', () => {
     imagesArray = Array.from(document.querySelectorAll('.zoom-img')).map(i => i.src);
@@ -127,21 +130,8 @@ function updateLightboxImage() {
 btnPrev.addEventListener('click', (e) => { e.stopPropagation(); currentIndex--; updateLightboxImage(); });
 btnNext.addEventListener('click', (e) => { e.stopPropagation(); currentIndex++; updateLightboxImage(); });
 
-// Đóng khung khi click ra ngoài hoặc click nút X
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox || e.target === btnClose) {
     lightbox.classList.remove('active');
   }
-});
-// Mở ảnh to khi click
-document.querySelectorAll('.zoom-img').forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.src;
-    lightbox.classList.add('active');
-  });
-});
-
-// Đóng ảnh to khi click vào nền đen
-lightbox.addEventListener('click', () => {
-  lightbox.classList.remove('active');
 });
