@@ -75,12 +75,13 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     aspect-ratio: 1/1; /* Đổi thành khung vuông để ảnh hiển thị to và rõ hơn trên điện thoại */
   }
 }
-/* 2. CHỈNH ẢNH KHÔNG GIAN (GALLERY) LẤP ĐẦY KHUNG TRÀN VIỀN */
+/* 2. CHỈNH ẢNH KHÔNG GIAN HIỂN THỊ FULL 100% ẢNH GỐC */
 .gallery-item img,
 .story-image img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* Lệnh cover giúp ảnh phóng to lấp đầy 100% khoảng trống */
+  object-fit: contain !important; /* Lệnh contain ép hiển thị trọn vẹn 100% chi tiết ảnh */
+  background-color: #fff; /* Nền trắng cho khoảng trống (nếu có) để nhìn sạch sẽ hơn */
   border-radius: inherit;
 }
 /* TÙY CHỈNH NÚT MENU THÀNH 2 HÀNG TRÊN ĐIỆN THOẠI */
