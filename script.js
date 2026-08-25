@@ -57,7 +57,7 @@ function renderMenu(filter="all"){
   grid.innerHTML = list.map(x => `
     <article class="menu-card ${x.cat}">
       <div class="card-image">
-        <img src="${x.image}" alt="${x.jp}" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="${x.image}" alt="${x.jp}">
         <span class="cat-pill">${x.cat === "set" ? "SET" : x.cat === "drink" ? "DRINK" : "FOOD"}</span>
       </div>
       <div class="card-body">
@@ -71,14 +71,12 @@ function renderMenu(filter="all"){
   `).join("");
 }
 
-// Hàm lắng nghe nút bấm lọc Menu
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
     buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     renderMenu(btn.dataset.filter);
     
-    // Tự động cuộn trang xuống menu
     const menuSection = document.getElementById("menu");
     if (menuSection) {
       const y = menuSection.getBoundingClientRect().top + window.scrollY - 80;
@@ -89,7 +87,6 @@ buttons.forEach(btn => {
 
 renderMenu();
 
-// Mở menu trên giao diện mobile
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.getElementById("mainNav");
 toggle?.addEventListener("click", () => {
@@ -98,7 +95,6 @@ toggle?.addEventListener("click", () => {
 });
 nav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
-// Khung lướt ảnh (Lightbox)
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.innerHTML = `
