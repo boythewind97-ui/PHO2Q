@@ -89,3 +89,23 @@ toggle?.addEventListener("click",()=>{
   toggle.setAttribute("aria-expanded",open);
 });
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+// --- MÃ CHO HIỆU ỨNG PHÓNG TO ẢNH ---
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+document.body.appendChild(lightbox);
+
+const lightboxImg = document.createElement('img');
+lightbox.appendChild(lightboxImg);
+
+// Mở ảnh to khi click
+document.querySelectorAll('.zoom-img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('active');
+  });
+});
+
+// Đóng ảnh to khi click vào nền đen
+lightbox.addEventListener('click', () => {
+  lightbox.classList.remove('active');
+});
