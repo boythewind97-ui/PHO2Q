@@ -89,14 +89,50 @@ toggle?.addEventListener("click",()=>{
   toggle.setAttribute("aria-expanded",open);
 });
 nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
-// --- MÃ CHO HIỆU ỨNG PHÓNG TO ẢNH ---
+// --- MÃ CHO HIỆU ỨNG PHÓNG TO VÀ LƯỚT ẢNH ---
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
+lightbox.innerHTML = `
+  <span class="lb-close">&times;</span>
+  <button class="lb-btn lb-prev">&#10094;</button>
+  <img class="lb-img" src="">
+  <button class="lb-btn lb-next">&#10095;</button>
+`;
 document.body.appendChild(lightbox);
 
-const lightboxImg = document.createElement('img');
-lightbox.appendChild(lightboxImg);
+const lbImg = lightbox.querySelector('.lb-img');
+const btnPrev = lightbox.querySelector('.lb-prev');
+const btnNext = lightbox.querySelector('.lb-next');
+const btnClose = lightbox.querySelector('.lb-close');
 
+let currentIndex = 0;
+let imagesArray = [];
+
+// Khi click vào bất kỳ ảnh nào
+document.querySelectorAll('.zoom-img').forEach((img, index) => {
+  img.addEventListener('click', () => {
+    imagesArray = Array.from(document.querySelectorAll('.zoom-img')).map(i => i.src);
+    currentIndex = index;
+    updateLightboxImage();
+    lightbox.classList.add('active');
+  });
+});
+
+function updateLightboxImage() {
+  if (currentIndex < 0) currentIndex = imagesArray.length - 1;
+  if (currentIndex >= imagesArray.length) currentIndex = 0;
+  lbImg.src = imagesArray[currentIndex];
+}
+
+btnPrev.addEventListener('click', (e) => { e.stopPropagation(); currentIndex--; updateLightboxImage(); });
+btnNext.addEventListener('click', (e) => { e.stopPropagation(); currentIndex++; updateLightboxImage(); });
+
+// Đóng khung khi click ra ngoài hoặc click nút X
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox || e.target === btnClose) {
+    lightbox.classList.remove('active');
+  }
+});
 // Mở ảnh to khi click
 document.querySelectorAll('.zoom-img').forEach(img => {
   img.addEventListener('click', () => {
