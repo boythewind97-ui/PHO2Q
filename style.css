@@ -12,31 +12,36 @@ a{text-decoration:none;color:inherit}
 .intro-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-bottom:1px solid var(--line)}.intro-strip>div{padding:18px;text-align:center;border-right:1px solid var(--line)}.intro-strip>div:last-child{border:0}.intro-strip span{display:block;font-size:24px}.intro-strip strong{display:block;font-size:12px;letter-spacing:2px;color:var(--green)}.intro-strip small{color:#777;font-size:11px}
 .section{max-width:1500px;margin:auto;padding:85px 5%}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}.section-heading h2,.story-content h2,.access-info h2{font-size:38px;line-height:1.2;margin:6px 0}.section-heading h2 small,.story-content h2 em,.access-info h2 small{font-size:15px;font-style:normal;font-weight:500;color:#8b8b7d;margin-left:8px}.section-heading>p{color:#777;text-align:right}
 .category-nav{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}.category-nav button{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 19px;border-radius:24px;font-weight:800;cursor:pointer;transition:.2s}.category-nav button:hover,.category-nav button.active{background:var(--green);color:#fff;border-color:var(--green);transform:translateY(-1px)}
-.menu-feature{display:grid;grid-template-columns:270px 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,#f0e6cc,#fffaf0);border:1px solid #ead7ad;border-radius:20px;padding:18px;margin-bottom:30px;box-shadow:var(--shadow)}.feature-poster{position:relative}.feature-poster img{display:block;width:100%;height:245px;object-fit:cover;object-position:center top;border-radius:13px}.feature-poster span{position:absolute;bottom:8px;left:8px;background:#0009;color:#fff;font-size:9px;border-radius:10px;padding:2px 7px}.feature-copy h3{font-size:29px;color:var(--green);margin:4px 0 8px}.feature-copy p{color:#666}.vn-line{font-family:serif;font-style:italic;color:#8d6b27!important;margin-top:8px}
-.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.menu-card{background:#fff;border:1px solid #eee5d6;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px #2a2a1a0d;transition:.25s}.menu-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #2a2a1a18}.card-image{height:190px;position:relative;background:linear-gradient(135deg,#e9e1d2,#d6c9b2);overflow:hidden}.photo-placeholder{height:100%;display:grid;place-items:center;align-content:center;text-align:center;color:#7d7568;background:linear-gradient(135deg,#eee6d8,#d8cdbb)}.photo-placeholder span{font-size:28px}.photo-placeholder b{font-size:12px}.photo-placeholder small{font-size:9px;margin-top:3px;color:#999}.cat-pill{position:absolute;top:10px;right:10px;background:#ffffffe8;border:1px solid #ddd;padding:3px 8px;border-radius:12px;font-size:9px;font-weight:900;color:var(--green)}.card-body{padding:15px}.code{font-size:9px;color:#aaa;letter-spacing:1px}.card-body h3{font-size:16px;margin-top:3px;line-height:1.4}.vn-name{font-size:12px;color:#7b7b73;font-weight:700;margin-top:2px}.card-body p{font-size:11px;color:#777;margin-top:7px;min-height:38px}.price{margin-top:9px;font-size:20px;font-weight:900;color:var(--red)}.price small{font-size:9px;color:#555}
-.story-section{display:grid;grid-template-columns:1.1fr 1fr;gap:55px;align-items:center;background:#ebe5d8;padding:85px 7%}.story-image{min-height:430px;border-radius:22px;overflow:hidden;background:#d7cdbc;box-shadow:var(--shadow)}.story-image .photo-placeholder{background:linear-gradient(135deg,#d9d0bf,#bfb29d)}.story-content{max-width:620px}.story-content p{margin:15px 0;color:#666}.viet-quote{margin-top:25px;padding:18px;background:#fff9e9;border-left:4px solid var(--gold);font-family:serif;font-size:22px;font-style:italic}.viet-quote small{display:block;font-family:"Noto Sans JP";font-size:11px;font-style:normal;margin-top:5px;color:#777}
-.gallery-section{background:#fff}.centered{text-align:center;display:block}.centered>p{text-align:center;margin-top:8px}.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:12px}.gallery-item{border-radius:16px;overflow:hidden}.gallery-item.large{grid-row:span 2}.gallery-item .photo-placeholder{height:100%}
+.menu-feature{display:grid;grid-template-columns:270px 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,#f0e6cc,#fffaf0);border:1px solid #ead7ad;border-radius:20px;padding:18px;margin-bottom:30px;box-shadow:var(--shadow)}.feature-poster{position:relative}.feature-poster span{position:absolute;bottom:8px;left:8px;background:#0009;color:#fff;font-size:9px;border-radius:10px;padding:2px 7px}.feature-copy h3{font-size:29px;color:var(--green);margin:4px 0 8px}.feature-copy p{color:#666}.vn-line{font-family:serif;font-style:italic;color:#8d6b27!important;margin-top:8px}
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.menu-card{background:#fff;border:1px solid #eee5d6;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px #2a2a1a0d;transition:.25s}.menu-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #2a2a1a18}.card-image{position:relative;overflow:hidden}.cat-pill{position:absolute;top:10px;right:10px;background:#ffffffe8;border:1px solid #ddd;padding:3px 8px;border-radius:12px;font-size:9px;font-weight:900;color:var(--green)}.card-body{padding:15px}.code{font-size:9px;color:#aaa;letter-spacing:1px}.card-body h3{font-size:16px;margin-top:3px;line-height:1.4}.vn-name{font-size:12px;color:#7b7b73;font-weight:700;margin-top:2px}.card-body p{font-size:11px;color:#777;margin-top:7px;min-height:38px}.price{margin-top:9px;font-size:20px;font-weight:900;color:var(--red)}.price small{font-size:9px;color:#555}
+.story-section{display:grid;grid-template-columns:1.1fr 1fr;gap:55px;align-items:center;background:#ebe5d8;padding:85px 7%}.story-image{min-height:430px;border-radius:22px;overflow:hidden;background:#d7cdbc;box-shadow:var(--shadow)}.story-content{max-width:620px}.story-content p{margin:15px 0;color:#666}.viet-quote{margin-top:25px;padding:18px;background:#fff9e9;border-left:4px solid var(--gold);font-family:serif;font-size:22px;font-style:italic}.viet-quote small{display:block;font-family:"Noto Sans JP";font-size:11px;font-style:normal;margin-top:5px;color:#777}
+.gallery-section{background:#fff}.centered{text-align:center;display:block}.centered>p{text-align:center;margin-top:8px}.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:12px}.gallery-item{border-radius:16px;overflow:hidden}.gallery-item.large{grid-row:span 2}
 .access-section{max-width:1500px;margin:auto;padding:85px 5%;display:grid;grid-template-columns:1fr 1.15fr;gap:50px}.info-row{display:flex;gap:15px;padding:17px 0;border-bottom:1px solid var(--line)}.info-row>span{font-size:24px}.info-row b{color:var(--green)}.info-row p{color:#666}.info-row a{color:var(--red);font-weight:900}.holiday{margin-top:17px;padding:12px 15px;border-radius:10px;background:#f4eedf;color:#665b4a;font-size:12px}.access-buttons{display:flex;gap:10px;margin-top:20px}.map-card{min-height:500px;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.map-card iframe{width:100%;height:100%;min-height:500px;border:0}
 .sns-section{background:var(--green);color:#fff;padding:55px 7%;display:flex;justify-content:space-between;align-items:center;gap:30px}.sns-section h2{font-size:30px}.sns-section p{color:#cbd9d0}.sns-buttons{display:flex;gap:10px;flex-wrap:wrap}.sns-buttons a{background:#fff;color:var(--green);padding:11px 18px;border-radius:24px;font-weight:900}
 footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:30px}.footer-main p{color:#bfcac3;font-size:12px;margin-top:8px}.footer-logo-img{width:100px;height:100px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}footer>div:not(.footer-main):not(.copyright){display:flex;flex-direction:column;gap:6px;font-size:12px}footer b{color:#d9bf76;letter-spacing:2px}.copyright{grid-column:1/-1;border-top:1px solid #ffffff20;padding-top:15px;text-align:center;color:#98a39d;font-size:10px;margin-top:10px}
+
+/* RESPONSIVE LAYOUT */
 @media(max-width:1100px){.menu-grid{grid-template-columns:repeat(3,1fr)}.main-nav{gap:16px}.brand{min-width:190px}}
 @media(max-width:800px){.site-header{height:70px;padding:0 15px}.brand-logo{width:48px;height:48px}.brand-copy small{display:none}.main-nav{display:none;position:absolute;left:0;right:0;top:70px;background:#fff;padding:15px 20px;box-shadow:0 20px 35px #0002;flex-direction:column;gap:4px}.main-nav.open{display:flex}.menu-toggle{display:block;margin-left:0}.header-socials{margin-left:auto}.hero{min-height:420px}.hero-bottom{padding:22px 20px;display:block}.hero-bottom h1{font-size:30px}.hero-actions{margin-top:12px}.intro-strip{grid-template-columns:1fr 1fr}.intro-strip>div:nth-child(2){border-right:0}.section{padding:60px 20px}.section-heading{display:block}.section-heading>p{text-align:left;margin-top:8px}.menu-feature{grid-template-columns:1fr}.feature-poster img{height:280px}.menu-grid{grid-template-columns:repeat(3,1fr)}.story-section,.access-section{grid-template-columns:1fr;padding:60px 20px;gap:30px}.story-image{min-height:300px}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery-item.large{grid-row:span 2}.sns-section{display:block;padding:45px 20px}.sns-buttons{margin-top:18px}footer{grid-template-columns:1fr 1fr;padding:45px 20px}}
 @media(max-width:520px){.brand-copy strong{font-size:20px}.header-socials .social{width:33px;height:33px;font-size:16px}.hero{min-height:330px}.hero-banner{background-position:center top; background-size: contain;}.hero-bottom{padding:18px}.hero-bottom .eyebrow{font-size:8px}.hero-bottom h1{font-size:24px}.hero-bottom p{font-size:13px}.btn{padding:9px 14px;font-size:12px}.intro-strip small{font-size:9px}.menu-grid{grid-template-columns:repeat(2, 1fr); gap: 10px}.feature-poster img{height:360px}.gallery-grid{grid-template-columns:1fr}.gallery-item.large{grid-row:auto}.access-buttons{flex-direction:column}.map-card iframe{min-height:380px}}
-/* Bố cục lưới 4 ảnh - Ghi đè lệnh cũ trên điện thoại */
+
+/* POSTER VÀ GALLERY */
 .poster-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px;}
-/* 1. CHỈNH 5 ẢNH MENU QUẢNG CÁO TỰ ĐỘNG PHÓNG TO VÀ THẢ DỌC */
 .feature-poster .poster-gallery img { 
   display: block !important; 
   width: 100% !important; 
   height: auto !important; 
-  aspect-ratio: auto !important; /* Bỏ ép khung ngang */
+  aspect-ratio: auto !important; 
   border-radius: 8px !important; 
   cursor: pointer; 
   transition: 0.2s; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Thêm chút bóng đổ cho nổi bật */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
 }
+.feature-poster .poster-gallery img:nth-child(5) {
+  grid-column: span 2 !important; 
 }
-/* Khung hiển thị ảnh phóng to có nút lướt */
+
+/* LIGHTBOX */
 .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; align-items: center; justify-content: center; z-index: 9999; cursor: pointer; }
 .lightbox.active { display: flex; }
 .lightbox img.lb-img { max-width: 80% !important; max-height: 80% !important; border-radius: 10px; display: block; object-fit: contain !important; cursor: default; }
@@ -46,59 +51,42 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
 .lb-next { right: 20px; }
 .lb-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; z-index: 10000; transition: 0.2s; }
 .lb-close:hover { color: var(--gold); }
-/* 3. CHỈNH ẢNH DANH SÁCH MÓN ĂN LẤP ĐẦY KHUNG */
+
+/* KHẮC PHỤC HIỂN THỊ ẢNH MÓN ĂN & GALLERY (KHÔNG BỊ MÀNG MỜ / LỆCH KHUNG) */
 .menu-card .card-image {
   height: auto !important; 
   aspect-ratio: 4/3; 
+  background: transparent;
 }
 .menu-card .card-image img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* Ép ảnh món ăn tràn viền hấp dẫn */
+  object-fit: cover !important;
+  display: block;
 }
-@media (max-width: 520px) {
-  .menu-card .card-image {
-    aspect-ratio: 1/1; /* Khung vuông trên điện thoại */
-  }
-}
-
-.menu-card .card-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important; /* Ép hiển thị toàn bộ chi tiết ảnh gốc */
-  background-color: #f4edd9; /* Màu nền lót đề phòng ảnh có tỷ lệ khác nhau */
-}
-
-/* Tinh chỉnh riêng cho màn hình điện thoại (khi xếp 2 cột) */
-@media (max-width: 520px) {
-  .menu-card .card-image {
-    aspect-ratio: 1/1; /* Đổi thành khung vuông để ảnh hiển thị to và rõ hơn trên điện thoại */
-  }
-}
-/* 2. CHỈNH ẢNH KHÔNG GIAN (GALLERY) LẤP ĐẦY KHUNG TRÀN VIỀN */
 .gallery-item img,
 .story-image img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important; 
   border-radius: inherit;
+  display: block;
 }
-/* TÙY CHỈNH NÚT MENU THÀNH 2 HÀNG TRÊN ĐIỆN THOẠI */
+
 @media (max-width: 520px) {
+  .menu-card .card-image {
+    aspect-ratio: 1/1; 
+  }
   .category-nav {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* Chia đúng 2 cột (2 hàng) */
+    grid-template-columns: 1fr 1fr !important; 
     gap: 12px !important;
   }
   .category-nav button {
-    padding: 14px 5px !important; /* Nút to, mập mạp dễ bấm hơn */
+    padding: 14px 5px !important; 
     font-size: 13px !important;
     width: 100% !important;
-    white-space: normal !important; /* Cho phép rớt dòng nếu chữ dài */
+    white-space: normal !important; 
     line-height: 1.3 !important;
   }
-}
-/* ÉP ẢNH SỐ 5 TRẢI DÀI FULL BỀ NGANG */
-.feature-poster .poster-gallery img:nth-child(5) {
-  grid-column: span 2 !important; /* Lệnh này bắt ảnh số 5 chiếm trọn 2 cột */
 }
