@@ -64,3 +64,12 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     aspect-ratio: 1/1; /* Đổi thành khung vuông để ảnh hiển thị to và rõ hơn trên điện thoại */
   }
 }
+/* HIỂN THỊ FULL ẢNH Ở PHẦN GIỚI THIỆU (ABOUT) VÀ KHÔNG GIAN (GALLERY) */
+.gallery-item img,
+.story-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; /* Ép hiển thị trọn vẹn 100% bức ảnh */
+  background-color: #ebe5d8; /* Màu nền lót cho tiệp với màu web */
+  border-radius: inherit;
+}
