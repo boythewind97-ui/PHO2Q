@@ -57,11 +57,7 @@ function renderMenu(filter="all"){
   grid.innerHTML=list.map(x=>`
     <article class="menu-card ${x.cat}">
       <div class="card-image">
-        <div class="photo-placeholder">
-          <span>📷</span>
-          <b>写真を追加</b>
-          <small>${x.image}</small>
-        </div>
+        <img src="${x.image}" alt="${x.jp}" style="width: 100%; height: 100%; object-fit: cover;">
         <span class="cat-pill">${x.cat==="set"?"SET":x.cat==="drink"?"DRINK":"FOOD"}</span>
       </div>
       <div class="card-body">
