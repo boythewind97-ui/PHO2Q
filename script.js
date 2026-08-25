@@ -72,13 +72,23 @@ function renderMenu(filter="all"){
   `).join("");
 }
 
-// BỘ MÃ XỬ LÝ NÚT BẤM LỌC DANH MỤC (Tất cả, Đồ ăn, Đồ uống, Set)
-buttons.forEach(btn=>{
-  btn.addEventListener("click",()=>{
-    buttons.forEach(b=>b.classList.remove("active"));
+// BỘ MÃ XỬ LÝ NÚT BẤM LỌC DANH MỤC VÀ CUỘN TRANG
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // 1. Đổi màu nút đang được chọn
+    buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
+    
+    // 2. Lọc và hiển thị đúng các món thuộc danh mục đó
     renderMenu(btn.dataset.filter);
-    document.getElementById("menu").scrollIntoView({behavior:"smooth",block:"start"});
+    
+    // 3. Tự động cuộn trang xuống khu vực menu một cách mượt mà
+    const menuSection = document.getElementById("menu");
+    if (menuSection) {
+      // Tính toán vị trí cuộn và trừ đi 80px để không bị thanh tiêu đề che khuất
+      const y = menuSection.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
   });
 });
 
