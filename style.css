@@ -83,3 +83,18 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
   object-fit: cover !important; /* Lệnh cover giúp ảnh phóng to lấp đầy 100% khoảng trống */
   border-radius: inherit;
 }
+/* TÙY CHỈNH NÚT MENU THÀNH 2 HÀNG TRÊN ĐIỆN THOẠI */
+@media (max-width: 520px) {
+  .category-nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* Chia đúng 2 cột (2 hàng) */
+    gap: 12px !important;
+  }
+  .category-nav button {
+    padding: 14px 5px !important; /* Nút to, mập mạp dễ bấm hơn */
+    font-size: 13px !important;
+    width: 100% !important;
+    white-space: normal !important; /* Cho phép rớt dòng nếu chữ dài */
+    line-height: 1.3 !important;
+  }
+}
