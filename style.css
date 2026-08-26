@@ -186,3 +186,41 @@ footer{background:#092118;color:#eee;padding:55px 6% 20px;display:grid;grid-temp
     grid-column: auto !important; 
   }
 }
+/* ========================================================
+   SẮP XẾP LẠI BANNER TRÊN MÁY TÍNH (CHỮ LỒNG LÊN ẢNH MƯỢT MÀ)
+   ======================================================== */
+@media (min-width: 601px) {
+  .hero {
+    position: relative !important;
+    min-height: 550px !important; /* Chiều cao khung ảnh trên máy tính */
+    display: flex !important;
+    align-items: flex-end !important;
+  }
+  .hero-banner {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center 40% !important; /* Dịch tâm ảnh xuống một chút để thấy trọn vẹn bát phở */
+    z-index: 1 !important;
+  }
+  .hero-bottom {
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+    padding: 180px 8% 50px !important; /* Kéo khoảng cách dài ra để hiệu ứng mờ (gradient) chuyển êm ái hơn */
+    /* Tạo hiệu ứng mờ dần từ dưới hất lên trên */
+    background: linear-gradient(to top, rgba(9,35,24,0.95) 0%, rgba(9,35,24,0.5) 50%, transparent 100%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
+  }
+  /* Phủ thêm bóng mờ cho chữ để chống chói và dễ đọc hơn trên nền ảnh sáng */
+  .hero-bottom h1 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7) !important;
+  }
+  .hero-bottom p, .eyebrow {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7) !important;
+  }
+}
