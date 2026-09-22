@@ -1,9 +1,10 @@
 const menuItems = [
 /* ================= SET MENU ================= */
-{id:"S01",cat:"set",jp:"牛肉フォーセット",vn:"Set Phở bò",desc:"牛肉フォー + ハーフバインミー + 揚げ春巻き1本",price:1350,image:"set-01.jpg"},
-{id:"S02",cat:"set",jp:"ブンボーフエセット",vn:"Set Bún bò Huế",desc:"ブンボーフエ + ハーフバインミー + 揚げベトナムソーセージ1本",price:1350,image:"set-02.jpg"},
-{id:"S03",cat:"set",jp:"牛肉フォーおすすめセット",vn:"Set Phở bò đặc biệt",desc:"牛肉フォー + ハーフバインミー + 揚げ春巻き1本 + 生春巻き1本",price:1450,image:"set-03.jpg"},
-{id:"S04",cat:"set",jp:"ブンボーフエセット",vn:"Set Bún bò Huế",desc:"ブンボーフエ + 揚げ春巻き2本",price:1400,image:"set-04.jpg"},
+{id:"S01",cat:"set",jp:"牛肉フォーセット",vn:"SET PHỞ BÒ + 2 GỎI CUỐN TÔM THỊT",desc:"牛肉フォー + 生春巻き2本",price:1430,image:"set-01.jpg"},
+{id:"S02",cat:"set",jp:"ブンボーフエセット",vn:"SET PHỞ BÒ + 1/2 BÁNH MÌ ",desc:"牛肉フォー + ハーフバインミー ",price:1300,image:"set-02.jpg"},
+{id:"S03",cat:"set",jp:"牛肉フォーおすすめセット",vn:"SET BÚN BÒ HUẾ + 1/2 BÁNH MÌ",desc:"ブン ボー フェ + ハーフバインミー ",price:1400,image:"set-03.jpg"},
+{id:"S04",cat:"set",jp:"ブンボーフエセット",vn:"SET BÚN BÒ HUẾ + 2 CHẢ GIÒ ",desc:"ブン ボー フエ + 揚げ春巻き2本",price:1450,image:"set-04.jpg"},
+  {id:"S05",cat:"set",jp:"ブンボーフエセット",vn:"SET BÚN BÒ HUẾ + 2 GỎI CUỐN TÔM THỊT ",desc:"ブンボーフエ + 生春巻き2本",price:1530,image:"set-04.jpg"},
 
 /* ================= FOOD ================= */
 {id:"F01",cat:"food",jp:"牛肉フォー（生）",vn:"PHỞ BÒ TÁI",desc:"やわらかな牛肉と香り豊かなスープ",price:980,image:"pho-bo-tai.jpg"},
@@ -19,7 +20,7 @@ const menuItems = [
 {id:"F11",cat:"food",jp:"焼きバインダー",vn:"BÁNH ĐA NƯỚNG",desc:"香ばしく焼き上げたベトナムのおつまみ",price:380,image:"banh-da-nuong.jpg"},
 {id:"F12",cat:"food",jp:"ベトナムハム",vn:"GIÒ LỤA",desc:"ベトナムの定番ハム",price:550,image:"gio-lua.jpg"},
 {id:"F13",cat:"food",jp:"揚げベトナムソーセージ",vn:"NEM CHUA RÁN",desc:"香ばしいベトナム風揚げソーセージ",price:650,image:"nem-chua-ran.jpg"},
-{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHÈ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
+{id:"F14",cat:"food",jp:"漬けきゅうり",vn:"DƯA CHUỘT CHẺ",desc:"さっぱりした副菜",price:500,image:"dua-chuot-che.jpg"},
 {id:"F15",cat:"food",jp:"茹で豆",vn:"ĐẬU LUỘC",desc:"シンプルなベトナムのおつまみ",price:500,image:"dau-luoc.jpg"},
 {id:"F16",cat:"food",jp:"海老と豚肉の生春巻き（3本）",vn:"GỎI CUỐN TÔM THỊT 3 CÁI",desc:"海老・豚肉・野菜の生春巻き",price:750,image:"goi-cuon.jpg"},
 {id:"F17",cat:"food",jp:"フォー・ブン用 麺追加",vn:"THÊM BÚN / PHỞ",desc:"フォー・ブンの麺を追加",price:110,image:"them-bun-pho.jpg"},
