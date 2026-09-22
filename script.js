@@ -1,10 +1,10 @@
 const menuItems = [
 /* ================= SET MENU ================= */
-{id:"S01",cat:"set",jp:"牛肉フォーセット",vn:"SET PHỞ BÒ + 2 GỎI CUỐN TÔM THỊT",desc:"牛肉フォー + 生春巻き2本",price:1430,image:"set-01.jpg"},
-{id:"S02",cat:"set",jp:"ブンボーフエセット",vn:"SET PHỞ BÒ + 1/2 BÁNH MÌ ",desc:"牛肉フォー + ハーフバインミー ",price:1300,image:"set-02.jpg"},
-{id:"S03",cat:"set",jp:"牛肉フォーおすすめセット",vn:"SET BÚN BÒ HUẾ + 1/2 BÁNH MÌ",desc:"ブン ボー フェ + ハーフバインミー ",price:1400,image:"set-03.jpg"},
+{id:"S01",cat:"set",jp:"牛肉フォー + 生春巻き2本 セット",vn:"SET PHỞ BÒ + 2 GỎI CUỐN TÔM THỊT",desc:"牛肉フォー + 生春巻き2本",price:1430,image:"set-01.jpg"},
+{id:"S02",cat:"set",jp:"牛肉フォー + ハーフバインミー セット",vn:"SET PHỞ BÒ + 1/2 BÁNH MÌ ",desc:"牛肉フォー + ハーフバインミー ",price:1300,image:"set-02.jpg"},
+{id:"S03",cat:"set",jp:"ブン ボー フェ + ハーフバインミー セット",vn:"SET BÚN BÒ HUẾ + 1/2 BÁNH MÌ",desc:"ブン ボー フェ + ハーフバインミー ",price:1400,image:"set-03.jpg"},
 {id:"S04",cat:"set",jp:"ブンボーフエセット",vn:"SET BÚN BÒ HUẾ + 2 CHẢ GIÒ ",desc:"ブン ボー フエ + 揚げ春巻き2本",price:1450,image:"set-04.jpg"},
-  {id:"S05",cat:"set",jp:"ブンボーフエセット",vn:"SET BÚN BÒ HUẾ + 2 GỎI CUỐN TÔM THỊT ",desc:"ブンボーフエ + 生春巻き2本",price:1530,image:"set-04.jpg"},
+  {id:"S05",cat:"set",jp:"ブンボーフエ + 生春巻き2本 セット",vn:"SET BÚN BÒ HUẾ + 2 GỎI CUỐN TÔM THỊT ",desc:"ブンボーフエ + 生春巻き2本",price:1530,image:"set-04.jpg"},
 
 /* ================= FOOD ================= */
 {id:"F01",cat:"food",jp:"牛肉フォー（生）",vn:"PHỞ BÒ TÁI",desc:"やわらかな牛肉と香り豊かなスープ",price:980,image:"pho-bo-tai.jpg"},
